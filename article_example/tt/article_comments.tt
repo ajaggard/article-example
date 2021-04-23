@@ -1,0 +1,6 @@
+[%  FOREACH comment IN article.comments; %]
+        <div class="comment" data-comment_id="[% comment.id %]">
+            <div class="comment-author">[% comment.author %]</div>
+            <div class="comment-text">[% comment.content %]</div>
+        </div>
+[%  END; %]

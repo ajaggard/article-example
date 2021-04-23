@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+}
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid black;
+    z-index: 10;
+    background-color: white;
+    padding: 10px;
+}
+.topbar .page-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+.foot {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+}
+.main-content {
+    padding: 60px 30px 10px;
+    min-height: calc(100vh - 100px);
+    background-color: #eeeeee;
+}
+.article-container {
+    background-color: white;
+    padding: 15px;
+}
+.article-container h2 {
+    margin-top: 0;
+}
+.article-box {
+    width: 33%;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.article-box .title-section {
+    padding: 5px 5px 23px;
+    position: relative;
+	height: 20px;
+}
+.article-box .title-section:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.article-box .title-section .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.article-box .title-section .instructions {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.article-box .content-section {
+    display: none;
+    padding: 5px 15px;
+	height: 442px;
+}
+.article-box.active .content-section {
+    overflow-y: scroll;
+}
+.article-box .content-section .author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.article-box .content-section .views {
+    margin-bottom: 5px;
+}
+.article-box .content-section .article-text {
+    margin: 15px;
+	white-space: pre-line;
+}
+.article-box .comment-section {
+    margin: 10px 0;
+}
+.article-box .comment-section form .invite {
+    font-weight: bold;
+}
+.article-box .comment-section form .form-entry {
+    margin-bottom: 5px;
+}
+.article-box .comment-section form .form-entry span {
+    display: inline-block;
+    width: 80px;
+    vertical-align: top;
+}
+.article-box .comment-section form .form-entry input,
+.article-box .comment-section form .form-entry textarea {
+    display:inline-block;
+    vertical-align: top;
+}
+.article-box .comment-section .comment {
+    margin: 5px;
+    border: 1px solid black;
+}
+.article-box .comment-section .comment .comment-author {
+    background-color: #eeeeee;
+    padding: 5px;
+    font-weight: bold;
+}
+.article-box .comment-section .comment .comment-text {
+    padding: 5px;
+}
